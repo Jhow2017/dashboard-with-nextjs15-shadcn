@@ -13,7 +13,7 @@
     "aliases": {
         "components": "@ds/components",
         "utils": "@ds/lib/utils",
-        "ui": "@ds/components/ui",
+        "ui": "@ds/components/global",
         "lib": "@ds/lib",
         "hooks": "@ds/hooks"
     },

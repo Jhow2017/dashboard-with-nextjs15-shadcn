@@ -1,17 +1,19 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Inter, Roboto } from 'next/font/google';
 import './globals.css';
 
 //context
 import { ThemeProvider } from '@shared/context/theme-provider';
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
+const inter = Inter({
+    variable: '--font-inter',
+    weight: ['400', '500', '700'],
     subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
+const roboto = Roboto({
+    variable: '--font-roboto',
+    weight: ['400', '500', '700'],
     subsets: ['latin'],
 });
 
@@ -28,7 +30,7 @@ export default function RootLayout({
     return (
         <html lang="pt-BR" suppressHydrationWarning>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${inter.variable} ${roboto.variable} antialiased`}
             >
                 <ThemeProvider
                     attribute="class"
